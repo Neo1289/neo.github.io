@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noam Emilio Radetich - Portfolio</title>
+    <style>
+        /* General Styling */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-bg: #f9f9f9;
+            --dark-text: #333;
+            --light-text: #666;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .skill-tag {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        /* Experience */
+        .experience-item {
+            margin-bottom: 30px;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+        
+        .company {
+            font-weight: 500;
+        }
+        
+        .date {
+            color: var(--light-text);
+            font-style: italic;
+        }
+        
+        .responsibilities {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .responsibilities li {
+            margin-bottom: 5px;
+        }
+        
+        /* Education */
+        .education-item {
+            margin-bottom: 20px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Noam Emilio Radetich</h1>
+            <p class="tagline">Business Analyst Lead with expertise in data analysis, visualization, and machine learning</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Badhoevedorp, Netherlands</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+31 621572856</span>
+                </div>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:n.radetich@gmail.com">n.radetich@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>🔗</span>
+                    <a href="https://www.linkedin.com/in/noam-emilio-r-13181670/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>7 years working for Catawiki, in the most recent position as Business Analyst Lead. Advanced proficiency in SQL. Professional experience using Looker Studio for in-depth data analysis. Fluent in Python, utilizing libraries such as NumPy, Pandas, Seaborn, Matplotlib, and Scikit-learn, among others. Expertise in data science and machine learning.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="job-title">Business Analyst Lead</div>
+                        <div class="company">Catawiki - Amsterdam, Netherlands</div>
+                    </div>
+                    <div class="date">Apr 2024 - Present</div>
+                </div>
+                <ul class="responsibilities">
+                    <li>Play a key role in making the department fully data-driven by utilizing data for measurement, decision making and prioritization.</li>
+                    <li>Work closely with the data team to define KPIs and measure the impact of products, features as well as operational metrics. Helping the data team in modelling the data pipelines.</li>
+                    <li>Support A/B testing with design, analysis, statistical decision making.</li>
+                    <li>Perform in-depth analysis on complex big data models to find new opportunities for improvement and growth and generate actionable insights.</li>
+                    <li>Build automated and scalable solutions to expose insights using BI tools.</li>
+                    <li>Monitor ongoing performance and perform ad hoc analysis for investigating issues.</li>
+                    <li>Mentor other analysts and promote good practices across the department.</li>
+                    <li>Analyze JSON responses from API endpoints to identify data patterns and potential areas for generating new insights.</li>
+                    <li>Regression analysis for departmental goals and assess impact of channel distribution strategies.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="job-title">Business Analyst</div>
+                        <div class="company">Catawiki - Amsterdam, Netherlands</div>
+                    </div>
+                    <div class="date">Jun 2022 - Apr 2024</div>
+                </div>
+                <ul class="responsibilities">
+                    <li>Metrics Trend Analysis & Insights: Regularly analyze various metrics related to customer experience (CX). Identify trends and patterns in the data to gain insights into customer behaviour and preferences.</li>
+                    <li>Identify the opportunities of improvement based on data results.</li>
+                    <li>Updating & Maintaining CX Datasets: Ensure the CX datasets are up-to-date and accurate by regularly collecting, cleaning, and organizing customer data from different sources.</li>
+                    <li>Connecting Process Changes with Data & KPI Impact: Investigate the impact of process changes or improvements on customer service and overall customer experience.</li>
+                    <li>Creating Dashboards & Stakeholder Reports: Design and develop interactive dashboards and comprehensive reports to help make data-driven decisions, and prioritize areas for improvement effectively.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="job-title">Quality Lead</div>
+                        <div class="company">Catawiki - Amsterdam, Netherlands</div>
+                    </div>
+                    <div class="date">Feb 2018 - May 2022</div>
+                </div>
+                <ul class="responsibilities">
+                    <li>Lead the analysis of end-user satisfaction data, extract actionable insights, and collaborate with leads to elevate the employee experience.</li>
+                    <li>Provide input on quality program improvement opportunities and take an active role in supporting the implementation and adoption of changes.</li>
+                    <li>Building reports and dashboards to provide insights on department KPIs.</li>
+                    <li>Data cleaning and data analysis for project reports (Google Sheets, Python, Sql).</li>
+                    <li>Collaboration with several stakeholders to set and improve existing dashboards and data sheets.</li>
+                    <li>Advise and coach team members on soft skills and best practices ultimately leading to higher productivity, service consistency, and high quality team performance as to improve customer delight.</li>
+                    <li>Provide training across the department.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Sklearn</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">Statistical Tools</span>
+                <span class="skill-tag">PowerBI</span>
+                <span class="skill-tag">Jira</span>
+                <span class="skill-tag">Data Analysis</span>
+                <span class="skill-tag">Business Analysis</span>
+                <span class="skill-tag">Matplotlib</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Google BigQuery</span>
+                <span class="skill-tag">Looker Studio</span>
+                <span class="skill-tag">Seaborn</span>
+                <span class="skill-tag">G Suite</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Strategic Thinking</span>
+                <span class="skill-tag">Process Automation</span>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education & Certifications</h2>
+            <div class="education-item">
+                <strong>Master of Science</strong> - Federico II University of Naples, Italy
+            </div>
+            
+            <h3 style="margin-top: 20px; margin-bottom: 10px;">Licenses & Certifications</h3>
+            <ul class="responsibilities">
+                <li>Using Python for Automations</li>
+                <li>Git Mastery: Beginner to Expert with GitHub & GitLab</li>
+                <li>Build a Data Warehouse Using BigQuery</li>
+                <li>Advanced Python: Working with Data</li>
+                <li>Python for Statistics</li>
+                <li>Strategic Business Analysis</li>
+                <li>Storytelling for Effective Communication</li>
+                <li>Statistical Learning</li>
+                <li>Genetics and Next Generation Sequencing for Bioinformatics</li>
+                <li>Looker Studio Masterclass</li>
+                <li>Python for Machine Learning & Data Science</li>
+                <li>Python Data Analysis for Healthcare</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer style="text-align: center; padding: 20px; background-color: var(--secondary-color); color: white;">
+        <p>&copy; 2025 Noam Emilio Radetich</p>
+    </footer>
+</body>
+</html>
